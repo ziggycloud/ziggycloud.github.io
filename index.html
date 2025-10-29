@@ -1,11 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <title>Welcome to My GitHub Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>算法工程分享 - 首页</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Hello, World!</h1>
-  <p>This is my personal website hosted on GitHub Pages.</p>
+    <header>
+        <div class="container">
+            <h1>算法工程分享</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">首页</a></li>
+                    <li><a href="tags.html">标签</a></li>
+                    <li><a href="about.html">关于</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="content">
+            <article class="post-preview">
+                <h2><a href="posts/algorithm-basics.html">算法基础概念与复杂度分析</a></h2>
+                <div class="post-meta">
+                    <span class="date">2024-01-15</span>
+                    <span class="tags">
+                        <a href="tags.html#algorithm">算法</a>
+                        <a href="tags.html#complexity">复杂度</a>
+                    </span>
+                </div>
+                <p>介绍算法的基本概念、时间复杂度和空间复杂度的计算方法，以及常见的复杂度类型分析...</p>
+            </article>
+
+            <article class="post-preview">
+                <h2><a href="posts/data-structures.html">数据结构在工程实践中的应用</a></h2>
+                <div class="post-meta">
+                    <span class="date">2024-01-10</span>
+                    <span class="tags">
+                        <a href="tags.html#data-structure">数据结构</a>
+                        <a href="tags.html#engineering">工程实践</a>
+                    </span>
+                </div>
+                <p>探讨各种数据结构在实际工程项目中的应用场景和优化策略...</p>
+            </article>
+
+            <article class="post-preview">
+                <h2><a href="posts/machine-learning.html">机器学习算法工程化实践</a></h2>
+                <div class="post-meta">
+                    <span class="date">2024-01-05</span>
+                    <span class="tags">
+                        <a href="tags.html#machine-learning">机器学习</a>
+                        <a href="tags.html#engineering">工程实践</a>
+                    </span>
+                </div>
+                <p>分享机器学习算法从理论到工程落地的实践经验，包括模型优化、部署等关键环节...</p>
+            </article>
+        </div>
+
+        <aside class="sidebar">
+            <div class="widget">
+                <h3>热门标签</h3>
+                <div class="tag-cloud">
+                    <a href="tags.html#algorithm" class="tag tag-large">算法</a>
+                    <a href="tags.html#data-structure" class="tag">数据结构</a>
+                    <a href="tags.html#engineering" class="tag tag-large">工程实践</a>
+                    <a href="tags.html#machine-learning" class="tag">机器学习</a>
+                    <a href="tags.html#complexity" class="tag">复杂度</a>
+                </div>
+            </div>
+
+            <div class="widget">
+                <h3>最新文章</h3>
+                <ul class="recent-posts">
+                    <li><a href="posts/algorithm-basics.html">算法基础概念与复杂度分析</a></li>
+                    <li><a href="posts/data-structures.html">数据结构在工程实践中的应用</a></li>
+                    <li><a href="posts/machine-learning.html">机器学习算法工程化实践</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 算法工程分享. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
