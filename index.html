@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>我的个人网站</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入 Google 字体 -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <!-- 自定义样式 -->
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        /* 导航栏样式 */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            overflow: hidden;
+            z-index: 1000;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+            color: #fff;
+        }
+        /* Banner 样式 */
+        .banner {
+            background-image: url('https://source.unsplash.com/random/1600x900');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .banner h1 {
+            font-size: 60px;
+            margin-top: 0;
+        }
+        .banner p {
+            font-size: 24px;
+        }
+        /* 主体内容样式 */
+        .content {
+            padding: 60px 20px;
+        }
+        .section {
+            max-width: 1000px;
+            margin: 0 auto;
+            margin-bottom: 60px;
+        }
+        .section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        /* 关于我部分 */
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .about img {
+            flex: 1 1 300px;
+            max-width: 300px;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+        .about-text {
+            flex: 2 1 300px;
+            padding: 20px;
+        }
+        /* 作品集部分 */
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .portfolio-item {
+            flex: 1 1 300px;
+            margin: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+        }
+        .portfolio-item h3 {
+            text-align: center;
+            padding: 10px;
+        }
+        /* 联系表单部分 */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #333;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        .contact-form button:hover {
+            background-color: #575757;
+        }
+        /* 页脚样式 */
+        .footer {
+            background-color: #333;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 20px;
+        }
+        .footer a {
+            color: #f2f2f2;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #fff;
+        }
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+            .about-text {
+                padding: 20px 0;
+            }
+            .navbar a {
+                float: none;
+                width: 100%;
+                text-align: left;
+                padding-left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <a href="#home">首页</a>
+        <a href="#about">关于我</a>
+        <a href="#portfolio">作品集</a>
+        <a href="#contact">联系我</a>
+    </div>
+
+    <!-- Banner -->
+    <section id="home" class="banner">
+        <h1>欢迎来到我的个人网站</h1>
+        <p>我是热爱技术的开发者</p>
+    </section>
+
+    <!-- 主体内容 -->
+    <div class="content">
+
+        <!-- 关于我 -->
+        <section id="about" class="section">
+            <h2>关于我</h2>
+            <div class="about">
+                <img src="https://oss.guyuehome.com/upload/2024/10/241739026135/11111.jpg" alt="我的照片">
+                <div class="about-text">
+                    <p>九幽阴灵，诸天神魔。以我血躯，奉为牺牲。三生七世，永坠阎罗。只为情故，虽死不悔。</p>
+                    <p>金铃清脆噬血误，一生总被痴情诉。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 作品集 -->
+        <section id="portfolio" class="section">
+            <h2>作品集</h2>
+            <div class="portfolio">
+                <div class="portfolio-item">
+                    <img src="https://oss.guyuehome.com/upload/2024/10/241739026135/11111.jpg" alt="项目一">
+                    <h3>项目一</h3>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://oss.guyuehome.com/upload/2024/10/241739026135/11111.jpg" alt="项目二">
+                    <h3>项目二</h3>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://oss.guyuehome.com/upload/2024/10/241739026135/11111.jpg" alt="项目三">
+                    <h3>项目三</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系我 -->
+        <section id="contact" class="section">
+            <h2>联系我</h2>
+            <div class="contact-form">
+                <form action="https://formspree.io/f/{your-form-id}" method="POST">
+                    <label for="name">姓名</label>
+                    <input type="text" id="name" name="百里屠苏" required>
+
+                    <label for="email">邮箱</label>
+                    <input type="email" id="email" name="幺三九白酒啤酒葡萄酒" required>
+
+                    <label for="message">留言</label>
+                    <textarea id="message" name="焚寂" rows="5" required></textarea>
+
+                    <button type="submit">发送</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- 页脚 -->
+    <div class="footer">
+        <p>© 2024 诛仙</p>
+        <p>
+            <a href="https://github.com/qomolangmah" target="_blank">GitHub</a> 
+        </p>
+    </div>
+
+</body>
+</html>
